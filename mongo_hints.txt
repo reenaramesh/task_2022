@@ -1,0 +1,15 @@
+	
+filter aperticular date
+{date:{$gte:ISODate("2022-06-11"),$lt:ISODate("2022-06-27")}}
+
+filter the data along with the device id 
+{device_id:"SC19302",date:{$gte:ISODate("2022-06-11"),$lt:ISODate("2022-06-27")}}
+
+filter based on consumption
+{device_id:"SSBAT7KN", consumption:{"$lt":30000},date:{$gte:ISODate("2022-05-28"),$lte:ISODate("2022-05-29")}}
+
+
+{"id":"ENE01218","location":"TATA GURGAON AAQ",
+"data":{"1":{"temp":"28.75","hum":"81.10","pm2.5":"39","pm10":"43","co2":"407",
+"noise":"54.26","co":"0.00","light":"958.46","uv":"4.79",
+"last_timestamp":"2022-07-12 12:
